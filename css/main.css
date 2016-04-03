@@ -22,7 +22,7 @@ body {
 
 	}
 
-	#main-image-text{
+	.main-image-text{
 		position:absolute;
 		width:200px;
 		top:80px;
@@ -30,7 +30,8 @@ body {
 	}
 
 	.main-image-header{
-		font-size: 25px;
+		font-size: 26px;
+		height:24px;
 	}
 
 	.main-image-body{
