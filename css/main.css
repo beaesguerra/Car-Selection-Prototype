@@ -21,3 +21,18 @@ body {
 		right:0;
 
 	}
+
+	#main-image-text{
+		position:absolute;
+		width:200px;
+		top:80px;
+		left:300px;
+	}
+
+	.main-image-header{
+		font-size: 25px;
+	}
+
+	.main-image-body{
+		font-size: 12px;
+	}
