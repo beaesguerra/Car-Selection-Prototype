@@ -74,16 +74,23 @@
 
     <header>
         <div class="container-fluid">
-          <div class="row">
-            <img src="img/audi_model.png" alt="car model" height="510" width="800" class="img-fluid">
-          </div>
-          <div class= "row">
-            <img src="img/audi_model.png" alt="car model" class="img-thumbnail">
-            <img src="img/audi_model_3.png" alt="car model" class="img-thumbnail">
-            <img src="img/audi_model_4.png" alt="car model" class="img-thumbnail">
-            <img src="img/audi_model_5.png" alt="car model" class="img-thumbnail">
-            <img src="img/car_model.png" alt="car model" class="img-thumbnail">
-          </div>    
+            <div class = "Select-Car">
+              <div class="main-image row">
+                <img src="img/audi_model.png" id = "main-image-1" alt="car model" height="510" width="800" class="img-fluid">
+                <img src="img/audi_model_3.png" id = "main-image-2" alt="car model" height="510" width="800" class="img-fluid hidden">
+                <img src="img/audi_model_4.png" id = "main-image-3" alt="car model" height="510" width="800" class="img-fluid hidden">
+                <img src="img/audi_model_5.png" id = "main-image-4" alt="car model" height="510" width="800" class="img-fluid hidden">
+                <img src="img/car_model.png" id = "main-image-5" alt="car model" height="510" width="800" class="img-fluid hidden">
+              </div>
+              <div class= "row">
+                <img src="img/audi_model.png" id = "thumbnail-1" alt="car model" class="img-thumbnail">
+                <img src="img/audi_model_3.png" id = "thumbnail-5" alt="car model" class="img-thumbnail">
+<button type="button" id="myStateButton" src="img/audi_model_3.png" class="btn btn-primary" src="img/audi_model_3.png">
+                <img src="img/audi_model_4.png" id = "thumbnail-3" alt="car model" class="img-thumbnail">
+                <img src="img/audi_model_5.png" id = "thumbnail-4" alt="car model" class="img-thumbnail">
+                <img src="img/car_model.png" id = "thumbnail-5" alt="car model" class="img-thumbnail">
+              </div>   
+            </div> 
         </div>
     </header>
 
@@ -102,7 +109,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-
+    <script src="js/car-selection.js"></script>
 </body>
 
 </html>
