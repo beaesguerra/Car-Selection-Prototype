@@ -168,3 +168,9 @@
 		background-color: #535353;    	
 		border:1px solid #021a40;
 	}
+
+	.customize-main-image{
+		position:absolute;
+		top:125px;
+		left:180px;
+	}
