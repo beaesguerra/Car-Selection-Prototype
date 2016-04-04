@@ -96,63 +96,85 @@
 
 
 	.color-picker{
-		width:30px;
-		height:30px;
+		width:45px;
+		height:45px;
 		border-radius:0;
 	}
 
 	#interior-color-1{
 		position:absolute;
-		top:160px;
-		left:105px;
-		background-image: url("img/Exterior-Color-Picker/red-color-picker.jpg");
+		top:130px;
+		left:1225px;
+		color:#000000;
+		background: url("../img/Interior-Color-Pickers/black.jpg");
+		background-size: 100%;
+
 	}
 	#interior-color-2{
 		position:absolute;
-		top:200px;
-		left:105px;
+		top:190px;
+		left:1225px;
+		color:#000000;
+		background: url("../img/Interior-Color-Pickers/brown.jpg");
+		background-size: 100%;
 	}
 	#interior-color-3{
 		position:absolute;
-		top:240px;	
-		left:105px;
+		top:250px;	
+		left:1225px;
+		color:#000000;
+		background: url("../img/Interior-Color-Pickers/red.jpg");
+		background-size: 100%;
 	}
 	#interior-color-4{
 		position:absolute;
-		top:280px;
-		left:105px;
+		top:310px;
+		left:1225px;
+		color:#000000;
+		background: url("../img/Interior-Color-Pickers/white.jpg");
+		background-size: 100%;
 	}
-	#interior-color-5{
-		position:absolute;
-		top:320px;
-		left:105px;
-	}
+
 	#exterior-color-1{
 		position:absolute;
-		top:160px;
-		left:1225px;
+		top:130px;
+		left:105px;
+		color:#000000;
+		background: url("../img/Exterior-Color-Pickers/white-color-picker.jpg");
+		background-size: 100%;
 	}
 	#exterior-color-2{
 		position:absolute;
-		top:200px;
-		left:1225px;
+		top:190px;
+		left:105px;
+		color:#000000;
+		background: url("../img/Exterior-Color-Pickers/grey-color-picker.jpg");
+		background-size: 100%;
 	}
 	#exterior-color-3{
 		position:absolute;
-		top:240px;	
-		left:1225px;
+		top:250px;	
+		left:105px;
+		color:#000000;
+		background: url("../img/Exterior-Color-Pickers/red-color-picker.jpg");
+		background-size: 100%;
 	}
 	#exterior-color-4{
 		position:absolute;
-		top:280px;
-		left:1225px;
+		top:310px;
+		left:105px;
+		color:#000000;
+		background: url("../img/Exterior-Color-Pickers/dark-blue-color-picker.jpg");
+		background-size: 100%;
 	}
 	#exterior-color-5{
 		position:absolute;
-		top:320px;
-		left:1225px;
+		top:370px;
+		left:105px;
+		color:#000000;
+		background: url("../img/Exterior-Color-Pickers/blue-color-picker.jpg");
+		background-size: 100%;
 	}
-
 	.model-view-thumbnails{
 		position:absolute;
 		top:425px;
