@@ -27,6 +27,7 @@
 		width:200px;
 		top:80px;
 		left:300px;
+		font-family: "Verdana", Geneva, sans-serif;
 	}
 
 	.main-image-header{
@@ -58,4 +59,97 @@
 	    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 	    background: #6E6D6E;
 	    border: solid 1px #030202;
+	}
+
+	#car-selector{
+		padding-left:0px;
+		padding-right: 0px;
+	}
+
+	.selector-topbar{
+		position:absolute;
+    	list-style-type: none;
+    	overflow: hidden;
+	  	background: linear-gradient(to right, #131313 , #898888); /* Standard syntax */
+  		height:40px;
+  		left:0px;
+  		right:0px;
+  		top: 75px;
+	}
+
+	.selector-topbar-elements{
+		display:inline-block;
+		padding-top:9px;
+		font-family: "Verdana", Geneva, sans-serif;
+		font-weight: bold;
+		font-size:16px;	
+	}
+	#text-exterior{
+		float:right;
+		padding-right: 80px;
+	}
+	#text-interior{
+		float:left;
+		padding-left: 80px;
+	}
+
+	#interior-color-picker{
+
+	}
+
+	.color-picker{
+		width:30px;
+		height:30px;
+		border-radius:0;
+	}
+
+	#interior-color-1{
+		position:absolute;
+		top:160px;
+		left:105px;
+	}
+	#interior-color-2{
+		position:absolute;
+		top:200px;
+		left:105px;
+	}
+	#interior-color-3{
+		position:absolute;
+		top:240px;	
+		left:105px;
+	}
+	#interior-color-4{
+		position:absolute;
+		top:280px;
+		left:105px;
+	}
+	#interior-color-5{
+		position:absolute;
+		top:320px;
+		left:105px;
+	}
+	#exterior-color-1{
+		position:absolute;
+		top:160px;
+		left:1225px;
+	}
+	#exterior-color-2{
+		position:absolute;
+		top:200px;
+		left:1225px;
+	}
+	#exterior-color-3{
+		position:absolute;
+		top:240px;	
+		left:1225px;
+	}
+	#exterior-color-4{
+		position:absolute;
+		top:280px;
+		left:1225px;
+	}
+	#exterior-color-5{
+		position:absolute;
+		top:320px;
+		left:1225px;
 	}
