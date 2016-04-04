@@ -136,8 +136,8 @@ $(document).ready(function() {
 	$("#red-audi-front").delay(1500).fadeIn(1000);
 
 	currentCustomizationView = 1;
-	currentInterior = 1;
 	currentInteriorColor = 3;
+	currentExteriorColor = 1;
 
 	if (currentCar == 1)
 	{
