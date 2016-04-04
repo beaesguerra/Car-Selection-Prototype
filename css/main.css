@@ -153,3 +153,18 @@
 		top:320px;
 		left:1225px;
 	}
+
+	.model-view-thumbnails{
+		position:absolute;
+		top:525px;
+		left:0;
+		right:0;
+
+	}
+
+	.model-thumbnail{
+		width: 100px;
+    	height: 75px;
+		background-color: #535353;    	
+		border:1px solid #021a40;
+	}
