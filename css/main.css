@@ -108,8 +108,17 @@
 		color:#000000;
 		background: url("../img/Interior-Color-Pickers/black.jpg");
 		background-size: 100%;
-
 	}
+	#interior-color-1:active{
+		position:absolute;
+		top:130px;
+		left:1225px;
+		color:#000000;
+		background: url("../img/Interior-Color-Pickers/black.jpg");
+		background-size: 100%;
+	}
+
+
 	#interior-color-2{
 		position:absolute;
 		top:190px;

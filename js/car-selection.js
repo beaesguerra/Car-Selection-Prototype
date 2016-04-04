@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$("#main-image-2").fadeOut(0);
 	$("#main-image-3").fadeOut(0);
 	$("#main-image-4").fadeOut(0);
@@ -15,7 +16,9 @@ $(document).ready(function() {
 	$("#model-view-thumbnails").fadeOut(0);
 	$("#main-customization-img").fadeOut(0);
 	var currentCar = 1;
-
+	var currentCustomizationView = 0;
+	var currentInteriorColor = 0;
+	var currentExteriorColor = 0;
   $('#thumbnail-1').on('click', function () {
   	if(currentCar != 1){
 		$("#build-car-button").fadeOut(0);
@@ -112,7 +115,7 @@ $(document).ready(function() {
 	$("#main-image-3").fadeOut(500);
 	$("#main-image-4").fadeOut(500);
 	$("#main-image-5").fadeOut(500);
-	$("#main-image-1").fadeOut(500);;
+	$("#main-image-1").fadeOut(500);
 
 	$("#main-image-text-2").fadeOut(500);
 	$("#main-image-text-3").fadeOut(500);
@@ -128,6 +131,11 @@ $(document).ready(function() {
 	$("#exterior-color-picker").delay(600).fadeIn(300);
 	$("#model-view-thumbnails").delay(1250).fadeIn(500);
 	$("#main-customization-img").delay(1500).fadeIn(1000);
+
+	currentCustomizationView = 1;
+	currentInterior = 1;
+	currentInteriorColor = 3;
+	
 	if (currentCar == 1)
 	{
 		document.getElementById("text-model").innerHTML = "Audi 951";
@@ -149,4 +157,62 @@ $(document).ready(function() {
 		document.getElementById("text-model").innerHTML = "Audi 361";
 	}
   });
+
+  $('#red-audi-view-thumbnail-1').on('click', function () {
+  	if (currentCustomizationView != 1)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#red-audi-front").fadeIn(1250);
+		currentCustomizationView = 1;
+	}
+  });
+  $('#red-audi-view-thumbnail-2').on('click', function () {
+  	if (currentCustomizationView != 2)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#red-audi-side").fadeIn(1250);
+		currentCustomizationView = 2;
+	}
+  });
+  $('#red-audi-view-thumbnail-3').on('click', function () {
+  	if (currentCustomizationView != 3)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#red-audi-headlights").fadeIn(1250);
+		currentCustomizationView = 3;
+	}
+  });
+    $('#red-audi-view-thumbnail-4').on('click', function () {
+  	if (currentCustomizationView != 4)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#red-audi-front-side-view").fadeIn(1250);
+		currentCustomizationView = 4;
+	}
+  });
+    $('#red-audi-view-thumbnail-5').on('click', function () {
+  	if (currentCustomizationView != 5)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#red-audi-backside").fadeIn(1250);
+		currentCustomizationView = 5;
+	}
+  });
+  $('#interior-thumbnail-1').on('click', function () {
+  	if (currentCustomizationView != 6)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#black-interior-1").fadeIn(1250);
+		currentCustomizationView = 6;
+	}
+  });
+  $('#interior-thumbnail-2').on('click', function () {
+  	if (currentCustomizationView != 7)
+  	{
+		$(".customize-main-image").fadeOut(0);
+		$("#black-interior-2").fadeIn(1250);
+		currentCustomizationView = 7;
+	}
+  });
+
 });
