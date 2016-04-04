@@ -13,8 +13,10 @@ $(document).ready(function() {
 	$("#selector-topbar").fadeOut(0);	
 	$("#interior-color-picker").fadeOut(0);
 	$("#exterior-color-picker").fadeOut(0);
-	$("#model-view-thumbnails").fadeOut(0);
+	$(".model-view-thumbnails").fadeOut(0);
 	$("#main-customization-img").fadeOut(0);
+	$("#next-button").fadeOut(0);
+
 	var currentCar = 1;
 	var currentCustomizationView = 0;
 	var currentInteriorColor = 0;
@@ -129,11 +131,17 @@ $(document).ready(function() {
 	$("#selector-topbar").delay(600).fadeIn(500);	
 	$("#interior-color-picker").delay(600).fadeIn(300);
 	$("#exterior-color-picker").delay(600).fadeIn(300);
-	$("#model-view-thumbnails").delay(1250).fadeIn(500);
+
+	$(".brown-interior-thumbnails").fadeOut(0);
+	$(".red-interior-thumbnails").fadeOut(0);
+	$(".white-interior-thumbnails").fadeOut(0);
+	$(".model-view-thumbnails").delay(2000).fadeIn(1000);
 
 	$("#main-customization-img").fadeIn(0);
 	$(".customize-main-image").fadeOut(0);
 	$("#red-audi-front").delay(1500).fadeIn(1000);
+
+	$("#next-button").delay(2000).fadeIn(200);
 
 	currentCustomizationView = 1;
 	currentInteriorColor = 3;
@@ -201,20 +209,116 @@ $(document).ready(function() {
 		currentCustomizationView = 5;
 	}
   });
-  $('#interior-thumbnail-1').on('click', function () {
+  $('.interior-thumbnail-1').on('click', function () {
   	if (currentCustomizationView != 6)
   	{
-		$(".customize-main-image").fadeOut(0);
-		$("#black-interior-1").fadeIn(1250);
+		$(".customize-main-image").fadeOut(0); //TODO
+		if (currentInteriorColor == 1)
+			$("#black-interior-1").delay(100).fadeIn(1250);
+		else if (currentInteriorColor == 2)
+			$("#brown-interior-1").delay(100).fadeIn(1250);
+		else if (currentInteriorColor == 2)
+			$("#red-interior-1").delay(100).fadeIn(1250);
+		else 
+			$("#white-interior-1").delay(100).fadeIn(1250);
 		currentCustomizationView = 6;
+
 	}
   });
-  $('#interior-thumbnail-2').on('click', function () {
+  $('.interior-thumbnail-2').on('click', function () {
   	if (currentCustomizationView != 7)
   	{
 		$(".customize-main-image").fadeOut(0);
-		$("#black-interior-2").fadeIn(1250);
+		if (currentInteriorColor == 1)
+			$("#black-interior-2").delay(100).fadeIn(1250);
+		else if (currentInteriorColor == 2)
+			$("#brown-interior-2").delay(100).fadeIn(1250);
+		else if (currentInteriorColor == 2)
+			$("#red-interior-2").delay(100).fadeIn(1250);
+		else 
+			$("#white-interior-2").delay(100).fadeIn(1250);
 		currentCustomizationView = 7;
+	}
+  });
+
+  $('#interior-color-1').on('click', function () {
+  	if (currentInteriorColor != 1)
+  	{
+		$(".brown-interior-thumbnails").fadeOut(0);
+		$(".red-interior-thumbnails").fadeOut(0);
+		$(".white-interior-thumbnails").fadeOut(0);
+		$(".black-interior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 6)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#black-interior-1").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 7)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#black-interior-2").delay(100).fadeIn(1250);
+		}
+		currentInteriorColor = 1;
+	}
+  });
+  $('#interior-color-2').on('click', function () {
+  	if (currentInteriorColor != 2)
+  	{
+		$(".black-interior-thumbnails").fadeOut(0);
+		$(".red-interior-thumbnails").fadeOut(0);
+		$(".white-interior-thumbnails").fadeOut(0);
+		$(".brown-interior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 6)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#brown-interior-1").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 7)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#brown-interior-2").delay(100).fadeIn(1250);
+		}
+		currentInteriorColor = 2;
+	}
+  });
+  $('#interior-color-3').on('click', function () {
+  	if (currentInteriorColor != 3)
+  	{
+		$(".black-interior-thumbnails").fadeOut(0);
+		$(".brown-interior-thumbnails").fadeOut(0);
+		$(".white-interior-thumbnails").fadeOut(0);
+		$(".red-interior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 6)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-interior-1").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 7)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-interior-2").delay(100).fadeIn(1250);
+		}
+		currentInteriorColor = 3;
+	}
+  });
+    $('#interior-color-4').on('click', function () {
+  	if (currentInteriorColor != 4)
+  	{
+		$(".black-interior-thumbnails").fadeOut(0);
+		$(".red-interior-thumbnails").fadeOut(0);
+		$(".brown-interior-thumbnails").fadeOut(0);
+		$(".white-interior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 6)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-interior-1").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 7)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-interior-2").delay(100).fadeIn(1250);
+		}
+		currentInteriorColor = 4;
 	}
   });
 

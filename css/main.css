@@ -184,13 +184,6 @@
 		background: url("../img/Exterior-Color-Pickers/blue-color-picker.jpg");
 		background-size: 100%;
 	}
-	.model-view-thumbnails{
-		position:absolute;
-		top:425px;
-		left:0;
-		right:0;
-
-	}
 
 	.model-thumbnail{
 		max-width:100%;
@@ -202,4 +195,63 @@
 		position:absolute;
 		top:130px;
 		left:220px;
+	}
+
+	.exterior-thumbnail-1{
+		position:absolute;
+		top:440px;
+		left:310px;
+	}
+	.exterior-thumbnail-2{
+		position:absolute;
+		top:440px;
+		left:410px;
+	}
+	.exterior-thumbnail-3{
+		position:absolute;
+		top:440px;
+		left:510px;
+	}
+	.exterior-thumbnail-4{
+		position:absolute;
+		top:440px;
+		left:610px;
+	}
+	.exterior-thumbnail-5{
+		position:absolute;
+		top:440px;
+		left:710px;
+	}
+	.interior-thumbnail-1{
+		position:absolute;
+		top:440px;
+		left:810px;
+	}
+	.interior-thumbnail-2{
+		position:absolute;
+		top:440px;
+		left:910px;
+	}
+
+	#next-button{
+		position: absolute;
+		left:1210px;
+		top:450px;
+		font-size:16px;
+		width:70px;
+		background-color: #6E6D6E;
+		border: solid 1px #030202;
+	}
+	#next-button:hover, #next-button:focus {
+	    background: #434343;
+	    border: solid 1px #030202;
+	    text-decoration: none;
+	}
+
+	#next-button:active {
+	    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	    background: #6E6D6E;
+	    border: solid 1px #030202;
 	}
