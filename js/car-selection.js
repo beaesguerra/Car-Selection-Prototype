@@ -16,6 +16,7 @@ $(document).ready(function() {
 	$(".model-view-thumbnails").fadeOut(0);
 	$("#main-customization-img").fadeOut(0);
 	$("#next-button").fadeOut(0);
+	$("#back-button").fadeOut(0);
 
 	var currentCar = 1;
 	var currentCustomizationView = 0;
@@ -135,13 +136,14 @@ $(document).ready(function() {
 	$(".brown-interior-thumbnails").fadeOut(0);
 	$(".red-interior-thumbnails").fadeOut(0);
 	$(".white-interior-thumbnails").fadeOut(0);
-	$(".model-view-thumbnails").delay(2000).fadeIn(1000);
+	$(".model-view-thumbnails").delay(2500).fadeIn(1000);
 
-	$("#main-customization-img").fadeIn(0);
+	$("#main-customization-img").fadeIn(500);
 	$(".customize-main-image").fadeOut(0);
 	$("#red-audi-front").delay(1500).fadeIn(1000);
 
 	$("#next-button").delay(2000).fadeIn(200);
+	$("#back-button").delay(2000).fadeIn(200);
 
 	currentCustomizationView = 1;
 	currentInteriorColor = 3;
@@ -320,6 +322,25 @@ $(document).ready(function() {
 		}
 		currentInteriorColor = 4;
 	}
+  });
+
+    $('#back-button').on('click', function () {
+
+		$("#main-image-1").delay(500).fadeIn(500);
+		$("#main-image-text-1").delay(500).fadeIn(500);	
+		$("#selector-topbar").fadeOut(0);	
+		$("#interior-color-picker").delay(200).fadeOut(300);
+		$("#exterior-color-picker").delay(200).fadeOut(300);
+		$(".model-view-thumbnails").delay(200).fadeOut(300);
+		$("#main-customization-img").delay(200).fadeOut(300);
+		$("#next-button").delay(200).fadeOut(300);
+		$("#back-button").delay(200).fadeOut(300);
+		$("#build-car-button").delay(500).fadeIn(500);
+		$(".model-thumbnails").delay(500).fadeIn(500);
+		currentCar = 1;
+		currentCustomizationView = 0;
+		currentInteriorColor = 0;
+		currentExteriorColor = 0;
   });
 
 });
