@@ -130,12 +130,15 @@ $(document).ready(function() {
 	$("#interior-color-picker").delay(600).fadeIn(300);
 	$("#exterior-color-picker").delay(600).fadeIn(300);
 	$("#model-view-thumbnails").delay(1250).fadeIn(500);
-	$("#main-customization-img").delay(1500).fadeIn(1000);
+
+	$("#main-customization-img").fadeIn(0);
+	$(".customize-main-image").fadeOut(0);
+	$("#red-audi-front").delay(1500).fadeIn(1000);
 
 	currentCustomizationView = 1;
 	currentInterior = 1;
 	currentInteriorColor = 3;
-	
+
 	if (currentCar == 1)
 	{
 		document.getElementById("text-model").innerHTML = "Audi 951";
