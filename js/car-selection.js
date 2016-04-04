@@ -13,6 +13,7 @@ $(document).ready(function() {
 	$("#interior-color-picker").fadeOut(0);
 	$("#exterior-color-picker").fadeOut(0);
 	$("#model-view-thumbnails").fadeOut(0);
+	$("#main-customization-img").fadeOut(0);
 	var currentCar = 1;
 
   $('#thumbnail-1').on('click', function () {
@@ -126,6 +127,7 @@ $(document).ready(function() {
 	$("#interior-color-picker").delay(600).fadeIn(300);
 	$("#exterior-color-picker").delay(600).fadeIn(300);
 	$("#model-view-thumbnails").delay(1250).fadeIn(500);
+	$("#main-customization-img").delay(1500).fadeIn(1000);
 	if (currentCar == 1)
 	{
 		document.getElementById("text-model").innerHTML = "Audi 951";

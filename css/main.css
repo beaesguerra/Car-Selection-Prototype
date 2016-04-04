@@ -84,18 +84,16 @@
 		font-weight: bold;
 		font-size:16px;	
 	}
-	#text-exterior{
+	#text-interior{
 		float:right;
 		padding-right: 80px;
 	}
-	#text-interior{
+	#text-exterior{
 		float:left;
 		padding-left: 80px;
 	}
 
-	#interior-color-picker{
 
-	}
 
 	.color-picker{
 		width:30px;
@@ -107,6 +105,7 @@
 		position:absolute;
 		top:160px;
 		left:105px;
+		background-image: url("img/Exterior-Color-Picker/red-color-picker.jpg");
 	}
 	#interior-color-2{
 		position:absolute;
@@ -156,21 +155,20 @@
 
 	.model-view-thumbnails{
 		position:absolute;
-		top:525px;
+		top:425px;
 		left:0;
 		right:0;
 
 	}
 
 	.model-thumbnail{
+		max-width:100%;
+		max-height: 100%;
 		width: 100px;
-    	height: 75px;
-		background-color: #535353;    	
-		border:1px solid #021a40;
+		height: 40px;
 	}
-
 	.customize-main-image{
 		position:absolute;
-		top:125px;
-		left:180px;
+		top:130px;
+		left:220px;
 	}
