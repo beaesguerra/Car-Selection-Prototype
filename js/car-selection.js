@@ -136,18 +136,22 @@ $(document).ready(function() {
 	$(".brown-interior-thumbnails").fadeOut(0);
 	$(".red-interior-thumbnails").fadeOut(0);
 	$(".white-interior-thumbnails").fadeOut(0);
+	$(".grey-audi-exterior-thumbnails").fadeOut(0);
+	$(".red-audi-exterior-thumbnails").fadeOut(0);
+	$(".dark-blue-audi-exterior-thumbnails").fadeOut(0);
+	$(".blue-audi-exterior-thumbnails").fadeOut(0);
 	$(".model-view-thumbnails").delay(2500).fadeIn(1000);
 
 	$("#main-customization-img").fadeIn(500);
 	$(".customize-main-image").fadeOut(0);
-	$("#red-audi-front").delay(1500).fadeIn(1000);
+	$("#white-audi-front").delay(1500).fadeIn(1000);
 
 	$("#next-button").delay(2000).fadeIn(200);
 	$("#back-button").delay(2000).fadeIn(200);
 
 	currentCustomizationView = 1;
 	currentInteriorColor = 1;
-	currentExteriorColor = 3;
+	currentExteriorColor = 1;
 
 	if (currentCar == 1)
 	{
@@ -171,50 +175,145 @@ $(document).ready(function() {
 	}
   });
 
-  $('#red-audi-view-thumbnail-1').on('click', function () {
+  $('.exterior-thumbnail-1').on('click', function () {
   	if (currentCustomizationView != 1)
   	{
 		$(".customize-main-image").fadeOut(0);
-		$("#red-audi-front").fadeIn(1250);
+		if (currentExteriorColor == 1)
+		{
+			$("#white-audi-front").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 2)
+		{
+			$("#grey-audi-front").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 3)
+		{
+			$("#red-audi-front").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 4)
+		{
+			$("#dark-blue-audi-front").fadeIn(1250);
+		}
+		else
+		{
+			$("#blue-audi-front").fadeIn(1250);
+		}
 		currentCustomizationView = 1;
 	}
   });
-  $('#red-audi-view-thumbnail-2').on('click', function () {
+  $('.exterior-thumbnail-2').on('click', function () {
   	if (currentCustomizationView != 2)
   	{
 		$(".customize-main-image").fadeOut(0);
-		$("#red-audi-side").fadeIn(1250);
+		if (currentExteriorColor == 1)
+		{
+			$("#white-audi-side").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 2)
+		{
+			$("#grey-audi-side").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 3)
+		{
+			$("#red-audi-side").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 4)
+		{
+			$("#dark-blue-audi-side").fadeIn(1250);
+		}
+		else
+		{
+			$("#blue-audi-side").fadeIn(1250);
+		}
 		currentCustomizationView = 2;
 	}
   });
-  $('#red-audi-view-thumbnail-3').on('click', function () {
+  $('.exterior-thumbnail-3').on('click', function () {
   	if (currentCustomizationView != 3)
   	{
 		$(".customize-main-image").fadeOut(0);
-		$("#red-audi-headlights").fadeIn(1250);
+		if (currentExteriorColor == 1)
+		{
+			$("#white-audi-headlights").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 2)
+		{
+			$("#grey-audi-headlights").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 3)
+		{
+			$("#red-audi-headlights").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 4)
+		{
+			$("#dark-blue-audi-headlights").fadeIn(1250);
+		}
+		else
+		{
+			$("#blue-audi-headlights").fadeIn(1250);
+		}
 		currentCustomizationView = 3;
 	}
   });
-    $('#red-audi-view-thumbnail-4').on('click', function () {
+    $('.exterior-thumbnail-4').on('click', function () {
   	if (currentCustomizationView != 4)
   	{
 		$(".customize-main-image").fadeOut(0);
-		$("#red-audi-front-side-view").fadeIn(1250);
+		if (currentExteriorColor == 1)
+		{
+			$("#white-audi-front-side-view").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 2)
+		{
+			$("#grey-audi-front-side-view").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 3)
+		{
+			$("#red-audi-front-side-view").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 4)
+		{
+			$("#dark-blue-audi-front-side-view").fadeIn(1250);
+		}
+		else
+		{
+			$("#blue-audi-front-side-view").fadeIn(1250);
+		}
 		currentCustomizationView = 4;
 	}
   });
-    $('#red-audi-view-thumbnail-5').on('click', function () {
+    $('.exterior-thumbnail-5').on('click', function () {
   	if (currentCustomizationView != 5)
   	{
 		$(".customize-main-image").fadeOut(0);
-		$("#red-audi-backside").fadeIn(1250);
+		if (currentExteriorColor == 1)
+		{
+			$("#white-audi-backside").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 2)
+		{
+			$("#grey-audi-backside").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 3)
+		{
+			$("#red-audi-backside").fadeIn(1250);
+		}
+		else if (currentExteriorColor == 4)
+		{
+			$("#dark-blue-audi-backside").fadeIn(1250);
+		}
+		else
+		{
+			$("#blue-audi-backside").fadeIn(1250);
+		}
 		currentCustomizationView = 5;
 	}
   });
   $('.interior-thumbnail-1').on('click', function () {
   	if (currentCustomizationView != 6)
   	{
-		$(".customize-main-image").fadeOut(0); //TODO
+		$(".customize-main-image").fadeOut(0); 
 		if (currentInteriorColor == 1)
 			$("#black-interior-1").delay(100).fadeIn(1250);
 		else if (currentInteriorColor == 2)
@@ -324,6 +423,187 @@ $(document).ready(function() {
 	}
   });
 
+  $('#exterior-color-1').on('click', function () {
+  	if (currentExteriorColor != 1)
+  	{
+		$(".grey-audi-exterior-thumbnails").fadeOut(0);
+		$(".red-audi-exterior-thumbnails").fadeOut(0);
+		$(".dark-blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".white-audi-exterior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 1)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-audi-side").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 2)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-audi-side").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 3)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-audi-headlights").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 4)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-audi-front-side-view").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 5)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#white-audi-backside").delay(100).fadeIn(1250);
+		}
+		currentExteriorColor = 1;
+	}
+  });
+  $('#exterior-color-2').on('click', function () {
+  	if (currentExteriorColor != 2)
+  	{
+		$(".white-audi-exterior-thumbnails").fadeOut(0);
+		$(".red-audi-exterior-thumbnails").fadeOut(0);
+		$(".dark-blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".grey-audi-exterior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 1)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#grey-audi-front").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 2)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#grey-audi-side").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 3)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#grey-audi-headlights").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 4)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#grey-audi-front-side-view").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 5)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#grey-audi-backside").delay(100).fadeIn(1250);
+		}
+		currentExteriorColor = 2;
+	}
+  });
+  $('#exterior-color-3').on('click', function () {
+  	if (currentExteriorColor != 3)
+  	{
+		$(".grey-audi-exterior-thumbnails").fadeOut(0);
+		$(".white-audi-exterior-thumbnails").fadeOut(0);
+		$(".dark-blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".red-audi-exterior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 1)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-audi-front").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 2)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-audi-side").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 3)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-audi-headlights").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 4)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-audi-front-side-view").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 5)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#red-audi-backside").delay(100).fadeIn(1250);
+		}
+		currentExteriorColor = 3;
+	}
+  });
+    $('#exterior-color-4').on('click', function () {
+  	if (currentExteriorColor != 4)
+  	{
+		$(".grey-audi-exterior-thumbnails").fadeOut(0);
+		$(".red-audi-exterior-thumbnails").fadeOut(0);
+		$(".white-audi-exterior-thumbnails").fadeOut(0);
+		$(".blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".dark-blue-audi-exterior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 1)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#dark-blue-audi-front").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 2)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#dark-blue-audi-side").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 3)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#dark-blue-audi-headlights").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 4)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#dark-blue-audi-front-side-view").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 5)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#dark-blue-audi-backside").delay(100).fadeIn(1250);
+		}
+		currentExteriorColor = 4;
+	}
+  });
+
+    $('#exterior-color-5').on('click', function () {
+  	if (currentExteriorColor != 5)
+  	{
+		$(".grey-audi-exterior-thumbnails").fadeOut(0);
+		$(".red-audi-exterior-thumbnails").fadeOut(0);
+		$(".dark-blue-audi-exterior-thumbnails").fadeOut(0);
+		$(".white-audi-exterior-thumbnails").fadeOut(0);
+		$(".blue-audi-exterior-thumbnails").delay(100).fadeIn(1500);
+		if (currentCustomizationView == 1)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#blue-audi-front").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 2)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#blue-audi-side").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 3)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#blue-audi-headlights").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 4)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#blue-audi-front-side-view").delay(100).fadeIn(1250);
+		}
+		else if (currentCustomizationView == 5)
+		{
+			$(".customize-main-image").fadeOut(0);
+			$("#blue-audi-backside").delay(100).fadeIn(1250);
+		}
+		currentExteriorColor = 5;
+	}
+  });
     $('#back-button').on('click', function () {
 
 		$("#main-image-1").delay(500).fadeIn(500);
