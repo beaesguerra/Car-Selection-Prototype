@@ -141,6 +141,7 @@ $(document).ready(function() {
 	$(".dark-blue-audi-exterior-thumbnails").fadeOut(0);
 	$(".blue-audi-exterior-thumbnails").fadeOut(0);
 	$(".white-audi-exterior-thumbnails").fadeIn(0);
+	$(".black-interior-thumbnails").fadeIn(0);
 	$(".model-view-thumbnails").delay(2500).fadeIn(1000);
 
 	$("#main-customization-img").fadeIn(500);
