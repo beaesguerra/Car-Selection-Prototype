@@ -113,7 +113,7 @@ $(document).ready(function() {
 	}
   });
 
-    $('#build-car-button').on('click', function () {
+  $('#build-car-button').on('click', function () {
 	$("#main-image-2").fadeOut(500);
 	$("#main-image-3").fadeOut(500);
 	$("#main-image-4").fadeOut(500);
