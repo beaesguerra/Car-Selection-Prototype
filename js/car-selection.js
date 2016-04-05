@@ -146,8 +146,8 @@ $(document).ready(function() {
 	$("#back-button").delay(2000).fadeIn(200);
 
 	currentCustomizationView = 1;
-	currentInteriorColor = 3;
-	currentExteriorColor = 1;
+	currentInteriorColor = 1;
+	currentExteriorColor = 3;
 
 	if (currentCar == 1)
 	{
@@ -219,7 +219,7 @@ $(document).ready(function() {
 			$("#black-interior-1").delay(100).fadeIn(1250);
 		else if (currentInteriorColor == 2)
 			$("#brown-interior-1").delay(100).fadeIn(1250);
-		else if (currentInteriorColor == 2)
+		else if (currentInteriorColor == 3)
 			$("#red-interior-1").delay(100).fadeIn(1250);
 		else 
 			$("#white-interior-1").delay(100).fadeIn(1250);
@@ -235,7 +235,7 @@ $(document).ready(function() {
 			$("#black-interior-2").delay(100).fadeIn(1250);
 		else if (currentInteriorColor == 2)
 			$("#brown-interior-2").delay(100).fadeIn(1250);
-		else if (currentInteriorColor == 2)
+		else if (currentInteriorColor == 3)
 			$("#red-interior-2").delay(100).fadeIn(1250);
 		else 
 			$("#white-interior-2").delay(100).fadeIn(1250);
