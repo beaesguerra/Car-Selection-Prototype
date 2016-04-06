@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/view-car.css" rel="stylesheet">
+    <link href="css/add-car.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,11 +24,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/jquery.js"></script>
-    <script src="js/view-car.js"></script>
 
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -64,64 +64,39 @@
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Cars
-                    <small>Available at this Dealership</small>
-                </h1>
+                <h1 class="page-header">Add Car</h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-3 portfolio-item car-div">
-                <a href="#">
-                    <img class="img-responsive" src="img/audi_model.png" alt="" id="first">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item car-div">
-                <a href="#">
-                    <img class="img-responsive" src="img/audi_model_2.png" alt="" id="second">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item car-div">
-                <a href="#">
-                    <img class="img-responsive" src="img/audi_model_3.png" alt="" id="third">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item car-div">
-                <a href="#">
-                    <img class="img-responsive" src="img/audi_model_4.png" alt="" id="fourth">
-                </a>
-            </div>
+            <form onsubmit="myFunction(){ return false; }">
+                <table id="atable">
+                    <tr>
+                        <td>Model Number</td>
+                        <td><input type="text" name="model-number"></td>
+                    </tr>
+                    <tr>
+                        <td>Brand</td>
+                        <td><input type="text" name="brand"></td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td><input type="number" min="1900" max="2100" name="year"></td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td><input type="text" name="model"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Add"></td>
+                    </tr>
+                </table>
+            </form>
         </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 portfolio-item car-div">
-                <a href="#">
-                    <img class="img-responsive" src="img/audi_model_5.png" alt="" id="fifth">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item car-div">
-                <a href="#">
-                    <img class="img-responsive" src="img/car_model.png" alt="" id="sixth">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item car-div" id="add-car-div">
-                <a href="add-car.html">
-                    <img class="img-responsive" src="img/plus.png" alt="" id="add-car">
-                </a>
-            </div>
-
-        </div>
-        <!-- /.row -->
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
