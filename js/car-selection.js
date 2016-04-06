@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	$("#body").show();
 	$("#main-image-2").fadeOut(0);
 	$("#main-image-3").fadeOut(0);
 	$("#main-image-4").fadeOut(0);
