@@ -36,7 +36,7 @@ $(document).ready(function() {
 		$("#main-image-text-4").fadeOut();
 		$("#main-image-text-5").fadeOut();
 		$("#main-image-text-1").delay(1000).fadeIn();
-		$("#build-car-button").delay(1500).fadeIn(50);
+		$("#build-car-button").delay(1050).fadeIn(50);
 	currentCar = 1;
 	}
   });
@@ -54,7 +54,7 @@ $(document).ready(function() {
 		$("#main-image-text-4").fadeOut();
 		$("#main-image-text-5").fadeOut();
 		$("#main-image-text-2").delay(1000).fadeIn();
-		$("#build-car-button").delay(1500).fadeIn(50);
+		$("#build-car-button").delay(1050).fadeIn(50);
 		currentCar = 2;
 	}
   });
@@ -72,7 +72,7 @@ $(document).ready(function() {
 		$("#main-image-text-4").fadeOut();
 		$("#main-image-text-5").fadeOut();
 		$("#main-image-text-3").delay(1000).fadeIn();
-		$("#build-car-button").delay(1500).fadeIn(50);
+		$("#build-car-button").delay(1050).fadeIn(50);
 		currentCar = 3;
 	}
   });
@@ -90,7 +90,7 @@ $(document).ready(function() {
 		$("#main-image-text-1").fadeOut();
 		$("#main-image-text-5").fadeOut();
 		$("#main-image-text-4").delay(1000).fadeIn();
-		$("#build-car-button").delay(1500).fadeIn(50);
+		$("#build-car-button").delay(1050).fadeIn(50);
 		currentCar = 4;
 	}
   });
@@ -108,7 +108,7 @@ $(document).ready(function() {
 		$("#main-image-text-4").fadeOut();
 		$("#main-image-text-1").fadeOut();
 		$("#main-image-text-5").delay(1000).fadeIn();
-		$("#build-car-button").delay(1500).fadeIn(50);
+		$("#build-car-button").delay(1050).fadeIn(50);
 		currentCar = 5;
 	}
   });
