@@ -287,3 +287,41 @@
 	.navbar-default .nav > li > a:focus {
 	  font-size: 14px;
 	}
+
+	#car-manufacturer{
+		position:absolute;
+		background:#696969;
+		height:400px;
+		width:600px;
+		top: 120px;
+		left:375px;
+		border-radius:7px;
+	}
+
+	#car-manufacturer p{
+		padding-top:20px;
+		font-size:24px;
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+		font-weight:bold;
+	}
+
+	.logo-thumbnail{
+		width: 80px;
+    	height: 60px;
+		background-color: #B0B0B0;    	
+		border:1px solid #454545;
+		border-radius:4px;
+		margin-top:15px;
+		margin-left:20px;
+	}
+
+	#logo-thumbnails{
+		padding-top: 30px;
+	}
+	.logo-thumbnail:hover, .logo-thumbnail:focus {
+
+	    background: #DEDEDE;
+	    border: solid 1px #535353;
+	    text-decoration: none;
+	        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 12px 30px 0 rgba(0,0,0,0.19);
+	}

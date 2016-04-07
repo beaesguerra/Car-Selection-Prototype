@@ -18,6 +18,14 @@ $(document).ready(function() {
 	$("#next-button").fadeOut(0);
 	$("#back-button").fadeOut(0);
 
+	$(".Select-Car").fadeOut(0);
+
+  $('.logo-thumbnail').on('click', function () {
+		$("#car-manufacturer").fadeOut(500);
+		$(".Select-Car").delay(500).fadeIn(500);
+	
+  });
+
 	var currentCar = 1;
 	var currentCustomizationView = 0;
 	var currentInteriorColor = 0;
