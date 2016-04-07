@@ -4,18 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background: url("../img/header.jpg");
-    background-color: #222222;
-}
+
 
 .navbar {
     border-bottom: 1px solid #777777;
-}
-
-h1 {
-    color: #aaaaaa;
 }
 
 .portfolio-item {
@@ -32,14 +24,14 @@ img{
     min-width: 246px;
     min-height: 157px;
     padding: 20px;
-    background-color: #555555;
+    background-color: #BABABA;
     border: 2px solid #666666;
     border-radius: 1px;
     margin-right: 30px;
 }
 
 img:hover{
-    border: 2px solid #33ccff;
+    border: 2px solid #444444;
     border-radius: 1px;
     background-color: #444444;
     transition: border .5s ease;
@@ -47,3 +39,6 @@ img:hover{
     -webkit-transition: border .5s ease;
 }
 
+#page-wrapper{
+    min-height:650px;
+}
