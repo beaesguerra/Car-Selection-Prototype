@@ -424,6 +424,7 @@ input {
   border: 1px solid #ddd;
   padding: 3px 5px;
   border-radius: 2px;
+  background-color: #eee;
 }
 
 input[type=button] {
